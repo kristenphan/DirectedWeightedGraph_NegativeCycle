@@ -153,6 +153,7 @@ def negative_cycle(adj, cost, n, m):
 
 # this program reads the input, builds an adjacent list representation of a directed, weighted graph (adj) with their weights stored in cost
 # the program prints 1 if there's a cycle of negative weight in the graph and print 0 if there's none
+# the input is in 1-based index, so some modificiations are needed to convert them to 0-based index
 if __name__ == '__main__':
     input = sys.stdin.read()
     data = list(map(int, input.split()))
